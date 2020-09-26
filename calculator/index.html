@@ -1,0 +1,39 @@
+<html>
+    
+    <head>
+        <title>Classic Calculator</title>
+        <meta charset="utf-8">
+        <meta name="Classic Calculator">
+        <link rel="stylesheet" href="./index.css">
+        <script type="text/javascript" language="javascript" src="index.js"></script>
+    </head>
+    
+    <body> 
+        
+        <div class="container">
+            
+            <div class="sub-container1">
+                
+                <input onchange="handleChange(event)" id="screenShow" type="text"> <br> <br>                
+                <div class="operators">
+                    
+                    <input onclick="calculate('+')" class="operators" type="button" value="+">
+                    <input onclick="calculate('-')" class="operators" type="button" value="-">
+                    <input onclick="calculate('*')" class="operators" type="button" value="*">
+                    <input onclick="calculate('/')" class="operators" type="button" value="/">
+                    <br> <br>
+                </div>
+                <input onclick="afficher();" class="validation-button" type="button" value="=">
+                
+            </div>
+            
+            <div class="sub-container2">
+                <h4>Result</h4>
+                <textarea id="res"></textarea>
+            </div>
+            
+        </div>
+        
+    </body>
+    
+</html>
